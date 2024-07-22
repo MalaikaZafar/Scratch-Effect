@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: repeating-linear-gradient(
+      0deg,
+      #fff 0%,
+      #fff 50%,
+      #000 50%,
+      #000 100%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      lavender 0%,
+      lavender 50%,
+      teal 50%,
+      teal 100%
+    );
+  background-size: 30px 30px;
+  background-blend-mode: difference;
+  cursor: grab;
+}
+
+span {
+  display: block;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  background-color: #333;
+  pointer-events: none;
+  border-radius: 50%;
+  background: url("https://cdn.pixabay.com/photo/2024/02/19/08/35/sailboat-8582847_1280.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
